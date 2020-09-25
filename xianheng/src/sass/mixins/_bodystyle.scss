@@ -1,0 +1,23 @@
+@mixin bodystyle() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@mixin wh($height,$bgcolor){
+    width:1200px;
+    height: $height;
+    background-color: $bgcolor;
+}
+@mixin li-style(){
+    list-style: none;
+    text-align: center;
+}
+@mixin bigger ($width,$height){
+    width: $width;
+    height: $height;
+}
+@mixin positon-style($position,$top,$left){
+    position: $position;
+    top:$top;
+    left: $left;
+}

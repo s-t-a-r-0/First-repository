@@ -1,0 +1,29 @@
+header{
+    @include flex-row(space-between);
+    .search{
+        form{
+            border:1px solid #e50112;
+            background-color: #e50112;
+            input{
+                @include bigger(395px,30px);
+                padding:0 8px;
+                outline: none;
+                border-color: white;
+            }
+            a{
+                display: inline-block;
+                text-align: center;
+                line-height: 30px;
+                text-decoration: none;
+                @include bigger(85px,30px);
+                @include font-standard(white,18px,#e50112);
+            }
+        }
+    }
+}
+.search>p{
+    @include font-standard();
+}
+.header-right{
+    @include bigger(400px,40px)
+}

@@ -1,0 +1,77 @@
+#inner-full{
+    @include flex-row(space-between);
+    padding-bottom: 25px;
+    //left style
+    .inner-left{
+        @include li-style();
+        li{
+            @include bigger(180px,40px);
+            @include font-standard(black,14px,#eeeeee);
+            text-align: left;
+            line-height: 40px;
+            padding-left: 40px;
+        }
+    }
+//center
+    .inner-center{
+        @include bigger(660px,460px);
+        padding:20px 20px 0 20px;
+        @include li-style();
+        position: relative;
+        .little{
+            @include bigger(660px,10px);
+            @include positon-style(absolute,330px,20px);
+            @include flex-row(center);
+            text-align: center;
+            li{
+                @include bigger(10px,10px);
+                background-color: #aaa;
+                margin: 5px;
+                border-radius: 50%;
+            }
+        }
+        .bottom-box{
+            width: 662px;
+            @include flex-row(space-between);
+        }
+    }
+//右边样式
+    .inner-right{
+        @include bigger(280px,480px);
+        @include flex-col(space-around);
+        background-color: #eee;
+        .people{
+            @include bigger(80px,80px);
+        }
+        .welcome{
+            height: 20px;
+            span{
+                @include font-standard(black,16px,transparent);
+            }
+        }
+//some white balls
+        .qiu{
+            width: 260px;
+            @include flex-row(space-around);
+            p{
+                @include font-standard(black,13px,white);
+                @include bigger(60px,60px);
+                border-radius: 50%;
+                text-align: center;
+                @include flex-row(space-around);
+            }
+        }
+
+        .inline{
+            @include bigger(242px,42px);
+            border-radius: 21px;
+            border: 1px solid #e50112;
+            @include font-standard(#e50112,16px,white);
+            text-align:center;
+            line-height: 42px;
+        }
+        .ma{
+            @include bigger(125px,125px);
+        }
+    }
+}

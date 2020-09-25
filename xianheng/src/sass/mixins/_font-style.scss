@@ -1,0 +1,5 @@
+@mixin font-standard($color:#666,$size:12px,$bgcolor:transparent) {
+    color: $color;
+    font-size: $size;
+    background-color: $bgcolor;
+}

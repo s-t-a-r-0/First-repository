@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    @include bodystyle;
+}
+#banner{
+    @include wh(30px,transparent)
+}
+header{
+    @include wh(86px,transparent)
+}
+#inner{
+    @include wh(43px,transparent)
+}
+.one-of-block{
+    margin-top: 15px;
+    @include wh(505px,pink);
+}
+
+footer{
+    margin-top:50px;
+    width: 100%;
+    @include bodystyle();
+    background-color: #efefef;
+}
+#footer-top{
+    @include wh(205px,orange)
+}
+#footer-bottom{
+    @include wh(154px,#225654)
+}

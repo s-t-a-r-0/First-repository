@@ -1,0 +1,32 @@
+#footer-top{
+    @include flex-row(space-around);
+    ul{
+        height: 100px;
+        @include li-style();
+        li{
+            a{
+                text-decoration: none;
+                @include font-standard(black,12px,transparent);
+            }
+            span:last-child{
+                @include font-standard(black,12px,transparent);
+            }
+        }
+    }
+    div{
+        @include flex-col(center);
+        ul{
+            @include bigger(240px,53px);
+            @include flex-row(left);
+            li{
+                text-align: left;
+            }
+        }
+    }
+}
+.footer-bottom{
+    @include flex-col(space-around);
+    .credential{
+        @include flex-row(space-around);
+    }
+}

@@ -1,0 +1,20 @@
+#inner{
+    border-bottom: 2px solid #e50112;
+    ul{
+        height: 43px;
+        @include flex-row(space-between);
+        @include li-style();
+        li:first-child{
+            @include bigger(220px,43px);
+            @include font-standard(white,16px,#e50112);
+            line-height: 43px;
+            a{
+                color: white;
+            }
+        }
+        a{
+            @include font-standard(#666,16px,transparent);
+            text-decoration: none;
+        }
+    }
+}

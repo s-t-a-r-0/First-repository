@@ -1,0 +1,38 @@
+//title
+.block-headline{
+    @include bigger(1200px,45px);
+    @include flex-row(space-between);
+}
+//content
+.block-content{
+    @include flex-row(center);
+    .con-list{
+        background-image: url("https://xhgj-xhmall-product.oss-cn-shanghai.aliyuncs.com/upload/category/1574854856691.png");
+        @include bigger(419px,460px);
+        border-right: 1px solid #ccc;
+            ul{
+                padding-top: 5px;
+                li{
+                    @include bigger(116px,30px);
+                    text-align: left;
+                    list-style: none;
+                    margin:5px 0 5px 12px;
+                    
+                    @include font-standard(#5a1e1e,12px,transparent);
+            }
+        } 
+    }
+    .con-piece{
+        @include bigger(780px,460px);
+        img{
+            @include bigger(259px,228px);
+            float: left;
+            border: 1px solid #ccc;
+            border-top: none;
+            border-left:none;
+        }
+        .border-top{
+            border-top: 1px solid #ccc;
+        }
+    }
+}
