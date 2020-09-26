@@ -26,8 +26,8 @@ footer{
     background-color: #efefef;
 }
 #footer-top{
-    @include wh(205px,orange)
+    @include wh(205px,transparent)
 }
 #footer-bottom{
-    @include wh(154px,#225654)
+    @include wh(154px,transparent)
 }

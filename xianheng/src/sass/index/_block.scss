@@ -1,9 +1,14 @@
-//title
+@charset "UTF-8";
+//分块主题
 .block-headline{
     @include bigger(1200px,45px);
     @include flex-row(space-between);
+    span{
+        color: #999;
+        font-size: 12px;
+    }
 }
-//content
+//分块详细内容
 .block-content{
     @include flex-row(center);
     .con-list{
@@ -22,6 +27,7 @@
             }
         } 
     }
+    //图片样式内容
     .con-piece{
         @include bigger(780px,460px);
         img{
@@ -34,5 +40,27 @@
         .border-top{
             border-top: 1px solid #ccc;
         }
+        aside{
+            @include bigger(14px,14px);
+            border-radius: 50%;
+            border: 1px solid #e50112;
+            // background-color: red;
+            position: absolute;
+            @include flex-row(center);
+            span{
+                color: #e50112;
+                font-size: 8px;
+                transform: translateX(1px);
+            }
+        }
     }
+}
+.con-piece>div{
+    position: relative;
+}
+//滚动图片
+#scrollimg{
+    @include bigger(1198px,100px);
+    margin: 20px 0 10px 0;
+    border: 1px solid #999;
 }

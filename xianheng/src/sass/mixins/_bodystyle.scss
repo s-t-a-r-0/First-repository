@@ -21,3 +21,7 @@
     top:$top;
     left: $left;
 }
+@mixin  bg-style($url,$left,$top,$big) {
+    background:$url no-repeat $left $top;
+    background-size: $big;
+}

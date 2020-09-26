@@ -1,0 +1,39 @@
+@charset "UTF-8";
+//侧边栏样式
+#stairway{
+    @include positon-style(fixed,160px,305px);
+    ul{
+        @include bigger(38px,604px);
+        @include li-style();
+        li{
+            @include font-standard(#666,14px,#eee);
+            @include bigger(38px,44px);
+            margin-bottom: 2px;
+        }
+        li:last-child{
+            @include font-standard(#666,14px,transparent);
+        }
+    }
+}
+//右侧边栏样式
+#right-way{
+    @include positon-style(fixed,100px,1849px);
+    ul{
+        @include li-style();
+        border: 1px solid #666;
+        li{
+            @include bigger(54px,54px);
+            @include font-standard(#666,12px,#999);
+            border-bottom: 1px solid #666;
+            img{
+                margin: -10px 0;
+            }
+        }
+        li:last-child{
+            border-bottom: none;
+            img{
+                margin:0;
+            }
+        }
+    }
+}

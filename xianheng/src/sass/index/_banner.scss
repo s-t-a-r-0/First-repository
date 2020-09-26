@@ -1,3 +1,4 @@
+@charset "UTF-8";
 //banner 样式
 #banner li{
     @include li-style();
@@ -25,14 +26,24 @@
     margin-left: 10px;
 }
 //banner 右边样式
+// .banner-right li{}
 .banner-right{
     float:right;
     @include flex-row(center);
-    a{
+    span{
+        color:#e50112;
+    }
+    .sjt{
+        color: #999;
+        font-size: 12px;
+        margin-left: 6px;
+    }
+     a{
         @include font-standard(#888888,12px,transparent);
         border-right: 2px solid #666;
         padding-right: 11px;
         text-decoration: none;
+        margin-left: 2px;
     }
 }
 //给最后一个li清除样式
@@ -43,5 +54,6 @@
             padding-right:0;
             border-right:none;
             @include font-standard(red,16px,transparent);
+            margin-left: 4px;
 }
 }

@@ -46,13 +46,13 @@ footer {
 #footer-top {
   width: 1200px;
   height: 205px;
-  background-color: orange;
+  background-color: transparent;
 }
 
 #footer-bottom {
   width: 1200px;
   height: 154px;
-  background-color: #225654;
+  background-color: transparent;
 }
 
 #banner li {
@@ -97,6 +97,14 @@ footer {
   align-items: center;
   justify-content: center;
 }
+.banner-right span {
+  color: #e50112;
+}
+.banner-right .sjt {
+  color: #999;
+  font-size: 12px;
+  margin-left: 6px;
+}
 .banner-right a {
   color: #888888;
   font-size: 12px;
@@ -104,6 +112,7 @@ footer {
   border-right: 2px solid #666;
   padding-right: 11px;
   text-decoration: none;
+  margin-left: 2px;
 }
 
 .banner-right li:last-child {
@@ -116,6 +125,7 @@ footer {
   color: red;
   font-size: 16px;
   background-color: transparent;
+  margin-left: 4px;
 }
 
 header {
@@ -160,6 +170,7 @@ header .search form a {
 
 #inner {
   border-bottom: 2px solid #e50112;
+  position: relative;
 }
 #inner ul {
   height: 43px;
@@ -187,6 +198,20 @@ header .search form a {
   background-color: transparent;
   text-decoration: none;
 }
+#inner .sai span {
+  position: absolute;
+  top: 4px;
+  left: 434px;
+}
+#inner .special span {
+  position: absolute;
+  top: 2px;
+  left: 548px;
+}
+#inner .mulu span {
+  margin-right: 10px;
+  font-size: 20px;
+}
 
 #inner-full {
   display: flex;
@@ -200,14 +225,19 @@ header .search form a {
   text-align: center;
 }
 #inner-full .inner-left li {
-  width: 180px;
+  width: 205px;
   height: 40px;
   color: black;
   font-size: 14px;
   background-color: #eeeeee;
   text-align: left;
   line-height: 40px;
-  padding-left: 40px;
+  padding-left: 15px;
+}
+#inner-full .inner-left li span {
+  margin-right: 5px;
+  color: #999;
+  font-size: 16px;
 }
 #inner-full .inner-center {
   width: 660px;
@@ -238,6 +268,7 @@ header .search form a {
 }
 #inner-full .inner-center .bottom-box {
   width: 662px;
+  margin-top: 4px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -255,6 +286,7 @@ header .search form a {
 #inner-full .inner-right .people {
   width: 80px;
   height: 80px;
+  margin-top: 10px;
 }
 #inner-full .inner-right .welcome {
   height: 20px;
@@ -273,12 +305,13 @@ header .search form a {
 }
 #inner-full .inner-right .qiu p {
   color: black;
-  font-size: 13px;
+  font-size: 12px;
   background-color: white;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   text-align: center;
+  padding: 5px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -298,6 +331,7 @@ header .search form a {
 #inner-full .inner-right .ma {
   width: 125px;
   height: 125px;
+  margin-bottom: 20px;
 }
 
 .block-headline {
@@ -307,6 +341,10 @@ header .search form a {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+.block-headline span {
+  color: #999;
+  font-size: 12px;
 }
 
 .block-content {
@@ -349,6 +387,33 @@ header .search form a {
 .block-content .con-piece .border-top {
   border-top: 1px solid #ccc;
 }
+.block-content .con-piece aside {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid #e50112;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.block-content .con-piece aside span {
+  color: #e50112;
+  font-size: 8px;
+  transform: translateX(1px);
+}
+
+.con-piece > div {
+  position: relative;
+}
+
+#scrollimg {
+  width: 1198px;
+  height: 100px;
+  margin: 20px 0 10px 0;
+  border: 1px solid #999;
+}
 
 #footer-top {
   display: flex;
@@ -357,18 +422,22 @@ header .search form a {
   justify-content: space-around;
 }
 #footer-top ul {
-  height: 100px;
+  height: 150px;
   list-style: none;
   text-align: center;
 }
+#footer-top ul li {
+  text-align: left;
+  margin-bottom: 10px;
+}
 #footer-top ul li a {
   text-decoration: none;
-  color: black;
-  font-size: 12px;
+  color: #444444;
+  font-size: 14px;
   background-color: transparent;
 }
 #footer-top ul li span:last-child {
-  color: black;
+  color: #444444;
   font-size: 12px;
   background-color: transparent;
 }
@@ -377,6 +446,8 @@ header .search form a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 150px;
+  margin-bottom: 40px;
 }
 #footer-top div ul {
   width: 240px;
@@ -390,17 +461,73 @@ header .search form a {
   text-align: left;
 }
 
-.footer-bottom {
+#footer-bottom {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  color: #666;
+  font-size: 12px;
+  background-color: transparent;
 }
-.footer-bottom .credential {
+#footer-bottom .credential {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+}
+
+#stairway {
+  position: fixed;
+  top: 160px;
+  left: 305px;
+}
+#stairway ul {
+  width: 38px;
+  height: 604px;
+  list-style: none;
+  text-align: center;
+}
+#stairway ul li {
+  color: #666;
+  font-size: 14px;
+  background-color: #eee;
+  width: 38px;
+  height: 44px;
+  margin-bottom: 2px;
+}
+#stairway ul li:last-child {
+  color: #666;
+  font-size: 14px;
+  background-color: transparent;
+}
+
+#right-way {
+  position: fixed;
+  top: 100px;
+  left: 1849px;
+}
+#right-way ul {
+  list-style: none;
+  text-align: center;
+  border: 1px solid #666;
+}
+#right-way ul li {
+  width: 54px;
+  height: 54px;
+  color: #666;
+  font-size: 12px;
+  background-color: #999;
+  border-bottom: 1px solid #666;
+}
+#right-way ul li img {
+  margin: -10px 0;
+}
+#right-way ul li:last-child {
+  border-bottom: none;
+}
+#right-way ul li:last-child img {
+  margin: 0;
 }
 
 /*# sourceMappingURL=index.css.map */

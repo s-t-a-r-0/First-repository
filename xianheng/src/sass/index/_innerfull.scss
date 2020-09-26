@@ -1,23 +1,31 @@
+@charset "UTF-8";
+//网页中间轮播图部分页面编辑
 #inner-full{
     @include flex-row(space-between);
     padding-bottom: 25px;
-    //left style
+    //左边部分样式
     .inner-left{
         @include li-style();
         li{
-            @include bigger(180px,40px);
+            @include bigger(205px,40px);
             @include font-standard(black,14px,#eeeeee);
             text-align: left;
             line-height: 40px;
-            padding-left: 40px;
+            padding-left: 15px;
+            span{
+                margin-right: 5px;
+                color: #999;
+                font-size: 16px;
+            }
         }
     }
-//center
+//中间部分样式
     .inner-center{
         @include bigger(660px,460px);
         padding:20px 20px 0 20px;
         @include li-style();
         position: relative;
+        //轮播图下方的小球
         .little{
             @include bigger(660px,10px);
             @include positon-style(absolute,330px,20px);
@@ -30,8 +38,10 @@
                 border-radius: 50%;
             }
         }
+        //轮播图下方的小图
         .bottom-box{
             width: 662px;
+            margin-top: 4px;
             @include flex-row(space-between);
         }
     }
@@ -42,6 +52,7 @@
         background-color: #eee;
         .people{
             @include bigger(80px,80px);
+            margin-top: 10px;
         }
         .welcome{
             height: 20px;
@@ -49,19 +60,20 @@
                 @include font-standard(black,16px,transparent);
             }
         }
-//some white balls
+//白色的球
         .qiu{
             width: 260px;
             @include flex-row(space-around);
             p{
-                @include font-standard(black,13px,white);
-                @include bigger(60px,60px);
+                @include font-standard(black,12px,white);
+                @include bigger(50px,50px);
                 border-radius: 50%;
                 text-align: center;
+                padding: 5px;
                 @include flex-row(space-around);
             }
         }
-
+        //在线咨询
         .inline{
             @include bigger(242px,42px);
             border-radius: 21px;
@@ -70,8 +82,10 @@
             text-align:center;
             line-height: 42px;
         }
+        //二维码
         .ma{
             @include bigger(125px,125px);
+            margin-bottom: 20px;
         }
     }
 }
