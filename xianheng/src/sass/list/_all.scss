@@ -14,11 +14,6 @@ header{
 #inner{
     @include wh(43px,transparent)
 }
-.one-of-block{
-    margin-top: 15px;
-    @include wh(505px,transparent);
-}
-
 footer{
     margin-top:50px;
     width: 100%;

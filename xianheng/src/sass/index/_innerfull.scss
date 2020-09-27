@@ -6,16 +6,49 @@
     //左边部分样式
     .inner-left{
         @include li-style();
-        li{
-            @include bigger(205px,40px);
-            @include font-standard(black,14px,#eeeeee);
-            text-align: left;
-            line-height: 40px;
-            padding-left: 15px;
+        .title{
+                li{
+                @include bigger(205px,40px);
+                @include font-standard(black,14px,#eeeeee);
+                    text-align: left;
+                    line-height: 40px;
+                    padding-left: 15px;
+                    cursor: pointer;
+                span{
+                    margin-right: 5px;
+                    color: #999;
+                    font-size: 16px;
+                }
+            }
+        }
+        //商品详细目录
+        .classify{
+            @include bigger(980px,480px);
+            @include positon-style(absolute,162px,572px);
+            box-shadow: -2px 2px 5px 2px #ccc;
+            background-color: white;
+            z-index: 999;
+            @include li-style();
+            display: none;
+            li{
+                @include bigger(923px,34px);
+                border-bottom: 1px solid #999;
+                line-height: 34px;
+                text-align: left;
+                @include font-standard(#888,12px,transparent);
+                cursor: pointer;
+            }
             span{
-                margin-right: 5px;
-                color: #999;
-                font-size: 16px;
+                color:#888;
+                font-weight: 500;
+            }
+            .span-title{
+                color: #e50112;
+                font-weight: bolder;
+            }
+            div{
+                @include flex-col(center);
+                display: none;
             }
         }
     }
@@ -25,6 +58,19 @@
         padding:20px 20px 0 20px;
         @include li-style();
         position: relative;
+        .imglist{
+            @include bigger(660px,330px);
+            .imglist-cen{
+                position: absolute;
+            }
+            img{
+                @include bigger(660px,330px);
+                margin-left: -4px;
+            }
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+        } 
         //轮播图下方的小球
         .little{
             @include bigger(660px,10px);
@@ -36,7 +82,12 @@
                 background-color: #aaa;
                 margin: 5px;
                 border-radius: 50%;
+                cursor: pointer;
             }
+        }
+        //小球的颜色
+        .little-act{
+            background-color:#e50112 !important;
         }
         //轮播图下方的小图
         .bottom-box{

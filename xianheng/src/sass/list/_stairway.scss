@@ -1,22 +1,4 @@
 @charset "UTF-8";
-//侧边栏样式
-#stairway{
-    display: none;
-    @include positon-style(fixed,160px,305px);
-    ul{
-        @include bigger(38px,604px);
-        @include li-style();
-        li{
-            @include font-standard(#666,14px,#eee);
-            @include bigger(38px,44px);
-            margin-bottom: 2px;
-            cursor: pointer;
-        }
-        li:last-child{
-            @include font-standard(#666,14px,transparent);
-        }
-    }
-}
 //右侧边栏样式
 #right-way{
     @include positon-style(fixed,100px,1849px);

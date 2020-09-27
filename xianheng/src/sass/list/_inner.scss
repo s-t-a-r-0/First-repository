@@ -1,0 +1,92 @@
+@charset "UTF-8";
+#inner{
+    border-bottom: 2px solid #e50112;
+    position: relative;
+    ul{
+        height: 43px;
+        @include flex-row(space-between);
+        @include li-style();
+        li:first-child{
+            @include bigger(220px,43px);
+            @include font-standard(white,16px,#e50112);
+            line-height: 43px;
+            a{
+                color: white;
+            }
+        }
+        a{
+            @include font-standard(#666,16px,transparent);
+            text-decoration: none;
+        }
+    }
+    .sai{
+        span{
+            @include positon-style(absolute,4px,434px);
+        }
+    }
+    .special{
+        span{
+            @include positon-style(absolute,2px,548px);
+        }
+    }
+    .mulu{
+        span{
+            margin-right: 10px;
+            font-size: 20px;
+        }
+    }
+    //商品title
+    .inner-left{
+        @include li-style();
+        @include positon-style(absolute,45px,0px);
+        display: none;
+        .title{
+                li{
+                @include bigger(205px,40px);
+                @include font-standard(black,14px,#eeeeee);
+                    text-align: left;
+                    line-height: 40px;
+                    padding-left: 15px;
+                    cursor: pointer;
+                span{
+                    margin-right: 5px;
+                    color: #999;
+                    font-size: 16px;
+                }
+            }
+        }
+        //商品详细目录
+        .classify{
+            @include bigger(980px,480px);
+            @include positon-style(absolute,0px,220px);
+            box-shadow: -2px 2px 5px 2px #ccc;
+            background-color: white;
+            z-index: 999;
+            @include li-style();
+            display: none;
+            li{
+                @include bigger(923px,34px);
+                border-bottom: 1px solid #999;
+                line-height: 34px;
+                text-align: left;
+                @include font-standard(#888,12px,transparent);
+                cursor: pointer;
+            }
+            span{
+                color:#888;
+                font-weight: 500;
+            }
+            .span-title{
+                color: #e50112;
+                font-weight: bolder;
+            }
+            div{
+                @include flex-col(center);
+                    li:last-child{
+                    border-bottom: none;
+                }
+                display: none;
+            }
+        }
+    }
+}

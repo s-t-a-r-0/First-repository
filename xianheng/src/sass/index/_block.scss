@@ -12,7 +12,7 @@
 .block-content{
     @include flex-row(center);
     .con-list{
-        background-image: url("https://xhgj-xhmall-product.oss-cn-shanghai.aliyuncs.com/upload/category/1574854856691.png");
+        background-image: url('https:\/\/xhgj-xhmall-product.oss-cn-shanghai.aliyuncs.com\/upload\/category\/1574854856691.png');
         @include bigger(419px,460px);
         border-right: 1px solid #ccc;
             ul{
@@ -61,6 +61,12 @@
 //滚动图片
 #scrollimg{
     @include bigger(1198px,100px);
+    @include flex-row(center);
     margin: 20px 0 10px 0;
     border: 1px solid #999;
+    white-space: nowrap;
+    overflow: hidden;
+    img{
+        margin: 0 30px;
+    }
 }

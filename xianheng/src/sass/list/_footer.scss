@@ -1,0 +1,41 @@
+@charset "UTF-8";
+//底部上半部分样式
+#footer-top{
+    @include flex-row(space-around);
+    ul{
+        height: 150px;
+        @include li-style();
+        li{
+            text-align: left;
+            margin-bottom: 10px;
+            a{
+               
+                text-decoration: none;
+                @include font-standard(#444444,14px,transparent);
+            }
+            span:last-child{
+                @include font-standard(#444444,12px,transparent);
+            }
+        }
+    }
+    div{
+        @include flex-col(center);
+        height: 150px;
+        margin-bottom: 40px;
+        ul{
+            @include bigger(240px,53px);
+            @include flex-row(left);
+            li{
+                text-align: left;
+            }
+        }
+    }
+}
+//底部下部样式
+#footer-bottom{
+    @include flex-col(space-around);
+    @include font-standard();
+    .credential{
+        @include flex-row(space-around);
+    }
+}

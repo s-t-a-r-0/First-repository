@@ -27,13 +27,6 @@ header {
   background-color: transparent;
 }
 
-.one-of-block {
-  margin-top: 15px;
-  width: 1200px;
-  height: 505px;
-  background-color: transparent;
-}
-
 footer {
   margin-top: 50px;
   width: 100%;
@@ -212,19 +205,15 @@ header .search form a {
   margin-right: 10px;
   font-size: 20px;
 }
-
-#inner-full {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 25px;
-}
-#inner-full .inner-left {
+#inner .inner-left {
   list-style: none;
   text-align: center;
+  position: absolute;
+  top: 45px;
+  left: 0px;
+  display: none;
 }
-#inner-full .inner-left .title li {
+#inner .inner-left .title li {
   width: 205px;
   height: 40px;
   color: black;
@@ -235,17 +224,17 @@ header .search form a {
   padding-left: 15px;
   cursor: pointer;
 }
-#inner-full .inner-left .title li span {
+#inner .inner-left .title li span {
   margin-right: 5px;
   color: #999;
   font-size: 16px;
 }
-#inner-full .inner-left .classify {
+#inner .inner-left .classify {
   width: 980px;
   height: 480px;
   position: absolute;
-  top: 162px;
-  left: 572px;
+  top: 0px;
+  left: 220px;
   box-shadow: -2px 2px 5px 2px #ccc;
   background-color: white;
   z-index: 999;
@@ -253,7 +242,7 @@ header .search form a {
   text-align: center;
   display: none;
 }
-#inner-full .inner-left .classify li {
+#inner .inner-left .classify li {
   width: 923px;
   height: 34px;
   border-bottom: 1px solid #999;
@@ -264,223 +253,23 @@ header .search form a {
   background-color: transparent;
   cursor: pointer;
 }
-#inner-full .inner-left .classify span {
+#inner .inner-left .classify span {
   color: #888;
   font-weight: 500;
 }
-#inner-full .inner-left .classify .span-title {
+#inner .inner-left .classify .span-title {
   color: #e50112;
   font-weight: bolder;
 }
-#inner-full .inner-left .classify div {
+#inner .inner-left .classify div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   display: none;
 }
-#inner-full .inner-center {
-  width: 660px;
-  height: 460px;
-  padding: 20px 20px 0 20px;
-  list-style: none;
-  text-align: center;
-  position: relative;
-}
-#inner-full .inner-center .imglist {
-  width: 660px;
-  height: 330px;
-  overflow: hidden;
-  white-space: nowrap;
-  position: relative;
-}
-#inner-full .inner-center .imglist .imglist-cen {
-  position: absolute;
-}
-#inner-full .inner-center .imglist img {
-  width: 660px;
-  height: 330px;
-  margin-left: -4px;
-}
-#inner-full .inner-center .little {
-  width: 660px;
-  height: 10px;
-  position: absolute;
-  top: 330px;
-  left: 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-#inner-full .inner-center .little li {
-  width: 10px;
-  height: 10px;
-  background-color: #aaa;
-  margin: 5px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-#inner-full .inner-center .little-act {
-  background-color: #e50112 !important;
-}
-#inner-full .inner-center .bottom-box {
-  width: 662px;
-  margin-top: 4px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-#inner-full .inner-right {
-  width: 280px;
-  height: 480px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #eee;
-}
-#inner-full .inner-right .people {
-  width: 80px;
-  height: 80px;
-  margin-top: 10px;
-}
-#inner-full .inner-right .welcome {
-  height: 20px;
-}
-#inner-full .inner-right .welcome span {
-  color: black;
-  font-size: 16px;
-  background-color: transparent;
-}
-#inner-full .inner-right .qiu {
-  width: 260px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}
-#inner-full .inner-right .qiu p {
-  color: black;
-  font-size: 12px;
-  background-color: white;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  text-align: center;
-  padding: 5px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}
-#inner-full .inner-right .inline {
-  width: 242px;
-  height: 42px;
-  border-radius: 21px;
-  border: 1px solid #e50112;
-  color: #e50112;
-  font-size: 16px;
-  background-color: white;
-  text-align: center;
-  line-height: 42px;
-}
-#inner-full .inner-right .ma {
-  width: 125px;
-  height: 125px;
-  margin-bottom: 20px;
-}
-
-.block-headline {
-  width: 1200px;
-  height: 45px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.block-headline span {
-  color: #999;
-  font-size: 12px;
-}
-
-.block-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.block-content .con-list {
-  background-image: url("https://xhgj-xhmall-product.oss-cn-shanghai.aliyuncs.com/upload/category/1574854856691.png");
-  width: 419px;
-  height: 460px;
-  border-right: 1px solid #ccc;
-}
-.block-content .con-list ul {
-  padding-top: 5px;
-}
-.block-content .con-list ul li {
-  width: 116px;
-  height: 30px;
-  text-align: left;
-  list-style: none;
-  margin: 5px 0 5px 12px;
-  color: #5a1e1e;
-  font-size: 12px;
-  background-color: transparent;
-}
-.block-content .con-piece {
-  width: 780px;
-  height: 460px;
-}
-.block-content .con-piece img {
-  width: 259px;
-  height: 228px;
-  float: left;
-  border: 1px solid #ccc;
-  border-top: none;
-  border-left: none;
-}
-.block-content .con-piece .border-top {
-  border-top: 1px solid #ccc;
-}
-.block-content .con-piece aside {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  border: 1px solid #e50112;
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.block-content .con-piece aside span {
-  color: #e50112;
-  font-size: 8px;
-  transform: translateX(1px);
-}
-
-.con-piece > div {
-  position: relative;
-}
-
-#scrollimg {
-  width: 1198px;
-  height: 100px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin: 20px 0 10px 0;
-  border: 1px solid #999;
-  white-space: nowrap;
-  overflow: hidden;
-}
-#scrollimg img {
-  margin: 0 30px;
+#inner .inner-left .classify div li:last-child {
+  border-bottom: none;
 }
 
 #footer-top {
@@ -600,4 +389,4 @@ header .search form a {
   margin: 0;
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=list.css.map */
