@@ -15,6 +15,7 @@ define([], function () {
                         })
                         console.log($blockarr[6]);
                         console.log(1);
+                        //渲染首页
                         let $str = '';
                         $str = `
                         <section id="block-one" class="one-of-block">
@@ -84,8 +85,8 @@ define([], function () {
                             $blockall.append($str);
                         }
                         $('img').lazyload({
-                            effect : "fadeIn"
-                            });
+                            effect: "fadeIn"
+                        });
                     })
             }();
             menu: !function () {
@@ -197,6 +198,87 @@ define([], function () {
                 $stairli.eq($stairli.size() - 1).on('click', function () {
                     document.documentElement.scrollTop = 0
                 })
+            }();
+            //右侧边栏
+            rightstair: !function () {
+                const $rightli = $('#right-way li');
+                const $rightspan = $('#right-way li span')
+                $rightli.on('mouseover', function () {
+                    $rightspan.eq($(this).index()).hide()
+                    $(this).css({
+                        backgroundColor: '#e50112',
+                        transitionDuration: '0.2s',
+                        color: 'white'
+                    })
+                })
+                $rightli.on('mouseout', function () {
+                    $rightspan.eq($(this).index()).show()
+                    $(this).css({
+                        backgroundColor: '#999',
+                        color: '#666'
+                    })
+                    $rightli.eq(0).css({
+                        backgroundColor:'#e50112'
+                    })
+                })
+                //qq图标动作
+                function chu(ss) {
+                    ss.css("flex-direction", 'row');
+                    ss.css({
+                        width: '124px',
+                        fontSize: '14px'
+                    });
+                    ss.children("b").show();
+                    ss.stop().animate({
+                        left: '-70px',
+                    }, 100)
+                }
+                function ru(rr) {
+                    rr.css("flex-direction", 'column');
+                    rr.children("b").hide();
+                    rr.stop().animate({
+                        width: '54px',
+                        left: '0px',
+                        fontSize: '12px'
+                    }, 100);
+                }
+                $rightli.eq(2).on('mouseover', function () {
+                    chu($(this));
+                });
+                $rightli.eq(2).on('mouseout', function () {
+                    ru($(this));
+                })
+                $rightli.eq(3).on('mouseover', function () {
+                    chu($(this));
+                });
+                $rightli.eq(3).on('mouseout', function () {
+                    ru($(this));
+                })
+                $rightli.eq(5).on('click',function(){
+                    $('html,body').animate({scrollTop:0})
+                })
+                //微信图标动作
+                $rightli.eq(4).on('mouseover',function(){
+                    $('.thisimg').stop().animate({
+                        left:'-160px'
+                    })
+                })
+                $rightli.eq(4).on('mouseout',function(){
+                    $('.thisimg').stop().animate({
+                        left:'54px'
+                    })
+                })
+                //判断右侧边栏的位置
+                if (document.documentElement.scrollTop >= 20) {
+                    $rightli.eq(5).show()
+                 }
+                window.onscroll = function () {
+                    if (document.documentElement.scrollTop >= 20) {
+                       $rightli.eq(5).show()
+                    }else{
+                        $rightli.eq(5).hide()
+                    }
+                }
             }()
         }
     }

@@ -57,6 +57,10 @@
 }
 .con-piece>div{
     position: relative;
+    &:hover img{
+        transform: translateX(-20px);
+        transition-duration: 1s;
+    }
 }
 //滚动图片
 #scrollimg{

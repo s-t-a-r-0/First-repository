@@ -171,6 +171,7 @@ header .search form a {
 #inner {
   border-bottom: 2px solid #e50112;
   position: relative;
+  cursor: pointer;
 }
 #inner ul {
   height: 43px;
@@ -180,6 +181,9 @@ header .search form a {
   justify-content: space-between;
   list-style: none;
   text-align: center;
+  color: #666;
+  font-size: 16px;
+  background-color: transparent;
 }
 #inner ul li:first-child {
   width: 220px;
@@ -189,14 +193,8 @@ header .search form a {
   background-color: #e50112;
   line-height: 43px;
 }
-#inner ul li:first-child a {
-  color: white;
-}
-#inner ul a {
-  color: #666;
-  font-size: 16px;
-  background-color: transparent;
-  text-decoration: none;
+#inner ul .change:hover {
+  color: red !important;
 }
 #inner .sai span {
   position: absolute;
@@ -273,11 +271,8 @@ header .search form a {
   font-weight: bolder;
 }
 #inner-full .inner-left .classify div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   display: none;
+  padding: 30px;
 }
 #inner-full .inner-center {
   width: 660px;
@@ -387,6 +382,12 @@ header .search form a {
   text-align: center;
   line-height: 42px;
 }
+#inner-full .inner-right .inline:hover {
+  background-color: #e50112;
+  transition-duration: 1s;
+  cursor: pointer;
+  color: white;
+}
 #inner-full .inner-right .ma {
   width: 125px;
   height: 125px;
@@ -465,6 +466,10 @@ header .search form a {
 
 .con-piece > div {
   position: relative;
+}
+.con-piece > div:hover img {
+  transform: translateX(-20px);
+  transition-duration: 1s;
 }
 
 #scrollimg {
@@ -583,12 +588,18 @@ header .search form a {
   border: 1px solid #666;
 }
 #right-way ul li {
+  position: relative;
   width: 54px;
   height: 54px;
   color: #666;
   font-size: 12px;
   background-color: #999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   border-bottom: 1px solid #666;
+  cursor: pointer;
 }
 #right-way ul li img {
   margin: -10px 0;
@@ -598,6 +609,14 @@ header .search form a {
 }
 #right-way ul li:last-child img {
   margin: 0;
+}
+#right-way ul .thisimg {
+  width: 160px;
+  height: 160px;
+  z-index: -1;
+  position: absolute;
+  top: 117px;
+  left: 54px;
 }
 
 /*# sourceMappingURL=index.css.map */

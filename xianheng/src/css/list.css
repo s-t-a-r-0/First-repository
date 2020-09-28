@@ -173,6 +173,10 @@ header .search form a {
   justify-content: space-between;
   list-style: none;
   text-align: center;
+  color: #666;
+  font-size: 16px;
+  background-color: transparent;
+  cursor: pointer;
 }
 #inner ul li:first-child {
   width: 220px;
@@ -181,15 +185,10 @@ header .search form a {
   font-size: 16px;
   background-color: #e50112;
   line-height: 43px;
-}
-#inner ul li:first-child a {
   color: white;
 }
-#inner ul a {
-  color: #666;
-  font-size: 16px;
-  background-color: transparent;
-  text-decoration: none;
+#inner ul .change:hover {
+  color: #e50112;
 }
 #inner .sai span {
   position: absolute;
@@ -334,33 +333,6 @@ header .search form a {
   justify-content: space-around;
 }
 
-#stairway {
-  display: none;
-  position: fixed;
-  top: 160px;
-  left: 305px;
-}
-#stairway ul {
-  width: 38px;
-  height: 604px;
-  list-style: none;
-  text-align: center;
-}
-#stairway ul li {
-  color: #666;
-  font-size: 14px;
-  background-color: #eee;
-  width: 38px;
-  height: 44px;
-  margin-bottom: 2px;
-  cursor: pointer;
-}
-#stairway ul li:last-child {
-  color: #666;
-  font-size: 14px;
-  background-color: transparent;
-}
-
 #right-way {
   position: fixed;
   top: 100px;
@@ -387,6 +359,143 @@ header .search form a {
 }
 #right-way ul li:last-child img {
   margin: 0;
+}
+
+.list-title {
+  width: 1200px;
+  height: 36px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  border-bottom: 1px solid #ccc;
+}
+.list-title p {
+  color: #666;
+  font-size: 14px;
+  background-color: transparent;
+  text-align: left;
+  margin: 5px 15px;
+}
+
+.list-con {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  width: 1200px;
+}
+.list-con .goods-menu ul {
+  width: 220px;
+  list-style: none;
+  text-align: center;
+  text-align: left;
+  border: 1px solid #ccc;
+  color: #666;
+  font-size: 14px;
+  background-color: transparent;
+}
+.list-con .goods-menu ul aside {
+  line-height: 40px;
+  text-align: left;
+  color: white;
+  font-size: 16px;
+  background-color: #999;
+  margin-bottom: -1px;
+  padding-left: 30px;
+  border-bottom: 1px solid #ccc;
+}
+.list-con .goods-menu li {
+  line-height: 40px;
+  border-top: 1px dashed #ccc;
+  padding-left: 30px;
+}
+.list-con .goods-menu li span {
+  color: #999;
+  font-size: 12px;
+  background-color: transparent;
+  margin: 0 6px 0 -18px;
+  display: inline-block;
+  transform: rotate(180deg) scale(0.6);
+}
+
+.goods-list .brand {
+  width: 960px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+}
+.goods-list .brand-left {
+  width: 100px;
+  height: 245px;
+  color: #333;
+  font-size: 14px;
+  background-color: #eee;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.goods-list .brand-right {
+  width: 830px;
+  height: 235px;
+  padding: 10px 10px 0px;
+}
+.goods-list .brand-right P {
+  margin-bottom: 10px;
+}
+.goods-list .brand-right P span {
+  display: inline-block;
+  margin: 0 3px;
+  color: #333;
+  font-size: 14px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.goods-list .brand-right .brand-list {
+  width: 714px;
+  list-style: none;
+  text-align: center;
+}
+.goods-list .brand-right .brand-list li {
+  width: 118px;
+  height: 50px;
+  border: 1px solid #ccc;
+  margin-top: -1px;
+  margin-right: -1px;
+  float: left;
+}
+.goods-list .sort {
+  width: 960px;
+  border: 1px solid #ccc;
+  margin-top: 12px;
+  color: #333;
+  font-size: 14px;
+  background-color: #eee;
+  list-style: none;
+  text-align: center;
+}
+.goods-list .sort > li {
+  line-height: 40px;
+  padding: 0px 20px;
+  display: inline-block;
+  border-left: 1px solid #ccc;
+  margin-left: -1px;
+  margin-right: -4px;
+  cursor: pointer;
+}
+.goods-list .sort > li ul {
+  display: inline-block;
+}
+.goods-list .sort > li:hover {
+  background-color: white;
+  color: #e50012;
+}
+.goods-list .sort li:last-child:hover {
+  background-color: #eee;
+  color: #333;
 }
 
 /*# sourceMappingURL=list.css.map */

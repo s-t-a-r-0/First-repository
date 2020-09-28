@@ -24,9 +24,12 @@
         @include li-style();
         border: 1px solid #666;
         li{
+            position: relative;
             @include bigger(54px,54px);
             @include font-standard(#666,12px,#999);
+            @include flex-col(center);
             border-bottom: 1px solid #666;
+            cursor: pointer;
             img{
                 margin: -10px 0;
             }
@@ -36,6 +39,11 @@
             img{
                 margin:0;
             }
+        }
+        .thisimg{
+            @include bigger(160px,160px);
+            z-index: -1;
+            @include positon-style(absolute,117px,54px);
         }
     }
 }

@@ -47,8 +47,8 @@
                 font-weight: bolder;
             }
             div{
-                @include flex-col(center);
                 display: none;
+                padding: 30px;
             }
         }
     }
@@ -132,6 +132,12 @@
             @include font-standard(#e50112,16px,white);
             text-align:center;
             line-height: 42px;
+            &:hover{
+                background-color: #e50112;
+                transition-duration: 1s;
+                cursor: pointer;
+                color: white;
+            }
         }
         //二维码
         .ma{

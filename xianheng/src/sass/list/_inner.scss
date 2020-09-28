@@ -5,19 +5,19 @@
     ul{
         height: 43px;
         @include flex-row(space-between);
-        @include li-style();
+        @include li-style(); 
+        @include font-standard(#666,16px,transparent);
+        cursor: pointer;
         li:first-child{
             @include bigger(220px,43px);
             @include font-standard(white,16px,#e50112);
             line-height: 43px;
-            a{
-                color: white;
-            }
+            color: white;
         }
-        a{
-            @include font-standard(#666,16px,transparent);
-            text-decoration: none;
+        .change:hover{
+            color: #e50112;
         }
+           
     }
     .sai{
         span{

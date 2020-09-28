@@ -1,0 +1,114 @@
+@charset "UTF-8";
+//商品列表页内容
+.list-title{
+    @include bigger(1200px,36px);
+    margin-top: 15px;
+    @include flex-row(left);
+    border-bottom:1px solid #ccc ;
+    p{
+        @include font-standard(#666,14px,transparent);
+        text-align: left;
+        margin: 5px 15px;
+    }
+}
+//产品目录
+.list-con{
+    @include flex-row(space-between);
+    margin-top: 15px;
+    width: 1200px;
+    .goods-menu{
+        ul{
+            width: 220px;
+            @include li-style();
+            text-align: left;
+            border: 1px solid #ccc;
+            @include font-standard(#666,14px,transparent);
+            aside{
+                line-height: 40px;
+                text-align: left;
+                @include font-standard(white,16px,#999);
+                margin-bottom: -1px;
+                padding-left: 30px;
+                border-bottom: 1px solid #ccc;
+            }
+        }
+        li{
+            line-height: 40px;
+            border-top: 1px dashed #ccc;
+            padding-left: 30px;
+            span{
+                @include font-standard(#999,12px,transparent);
+                margin: 0 6px 0 -18px;
+                display: inline-block;
+                transform:rotate(180deg) scale(0.6);
+            }
+        }
+    }
+}
+//产品列表
+.goods-list{
+    
+    .brand{
+        width: 960px;
+        @include flex-row(space-between);
+        border: 1px solid #ccc;
+    }
+    .brand-left{
+            @include bigger(100px,245px);
+            @include font-standard(#333,14px,#eee);
+            padding-left:20px;
+            padding-top:10px;
+    }
+    .brand-right{
+            @include bigger(830px,235px);
+            padding: 10px 10px 0px;
+        P{
+            margin-bottom: 10px;
+            span{
+                display: inline-block;
+                margin:0 3px;
+                @include font-standard(#333,14px,transparent);
+                cursor: pointer;
+            }
+        }
+        .brand-list{
+            width: 714px;
+            @include li-style();
+            li{
+                @include bigger(118px,50px);
+                border: 1px solid #ccc;
+                margin-top: -1px;
+                margin-right: -1px;
+                float: left;
+            }
+        }
+    }
+    .sort{
+        width: 960px;
+        border: 1px solid #ccc;
+        margin-top: 12px;
+        @include font-standard(#333,14px,#eee);
+        @include li-style();
+        &>li{
+            line-height: 40px;
+            padding: 0px 20px;
+            display: inline-block;
+            border-left: 1px solid #ccc;
+            margin-left: -1px;
+            margin-right: -4px;
+            cursor: pointer;
+            ul{
+                display: inline-block;
+            }
+            &:hover{
+                background-color: white;
+                color: #e50012;
+            }
+        }
+        li:last-child:hover{
+            background-color:#eee;
+            color: #333;
+        }
+    }
+    
+}
