@@ -39,21 +39,22 @@
     .inner-left{
         @include li-style();
         @include positon-style(absolute,45px,0px);
-        display: none;
         .title{
-                li{
-                @include bigger(205px,40px);
-                @include font-standard(black,14px,#eeeeee);
-                    text-align: left;
-                    line-height: 40px;
-                    padding-left: 15px;
-                    cursor: pointer;
-                span{
-                    margin-right: 5px;
-                    color: #999;
-                    font-size: 16px;
+            display: none;
+                    li{
+                    @include bigger(205px,40px);
+                    @include font-standard(black,14px,#eeeeee);
+                        text-align: left;
+                        line-height: 40px;
+                        padding-left: 15px;
+                        cursor: pointer;
+                        
+                    span{
+                        margin-right: 5px;
+                        color: #999;
+                        font-size: 16px;
+                    }
                 }
-            }
         }
         //商品详细目录
         .classify{

@@ -14,6 +14,7 @@
 //产品目录
 .list-con{
     @include flex-row(space-between);
+    align-items: flex-start;
     margin-top: 15px;
     width: 1200px;
     .goods-menu{
@@ -47,11 +48,12 @@
 }
 //产品列表
 .goods-list{
-    
+    position: relative;
     .brand{
         width: 960px;
         @include flex-row(space-between);
         border: 1px solid #ccc;
+        
     }
     .brand-left{
             @include bigger(100px,245px);
@@ -110,5 +112,47 @@
             color: #333;
         }
     }
-    
+    .banner-btn{
+        @include bigger(50px,20px);
+        @include font-standard(#444,12px,white);
+        @include positon-style(absolute,10px,890px);
+        border: 1px solid #dfdfdf;
+        cursor: pointer;
+        text-align: center;
+    }
+    .lists{
+       
+        width: 960px;
+        li{
+            @include li-style();
+            @include bigger(210px,318px);
+            padding: 10px;
+            border: 1px solid transparent;
+            margin-top: 12px;
+            margin-right: 5px;
+            float: left;
+            img{
+                @include bigger(210px,227px);
+            }
+            p{
+                text-align: left;
+            }
+            p:nth-child(2){
+                @include font-standard(#666,16px,transparent);
+                span{
+                    @include font-standard(#e50012,18px,transparent);
+                }
+            }
+            p:nth-child(3){
+                @include font-standard(#333,14px,transparent);
+                margin: 5px 0 10px 0;
+            }
+            p:nth-child(4){
+                @include font-standard(#999,12px,transparent);
+                span{
+                    @include font-standard(#e50012,12px,transparent);
+                }
+            }
+        }
+    }   
 }

@@ -210,6 +210,8 @@ header .search form a {
   position: absolute;
   top: 45px;
   left: 0px;
+}
+#inner .inner-left .title {
   display: none;
 }
 #inner .inner-left .title li {
@@ -384,6 +386,7 @@ header .search form a {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  align-items: flex-start;
   margin-top: 15px;
   width: 1200px;
 }
@@ -421,6 +424,9 @@ header .search form a {
   transform: rotate(180deg) scale(0.6);
 }
 
+.goods-list {
+  position: relative;
+}
 .goods-list .brand {
   width: 960px;
   display: flex;
@@ -496,6 +502,66 @@ header .search form a {
 .goods-list .sort li:last-child:hover {
   background-color: #eee;
   color: #333;
+}
+.goods-list .banner-btn {
+  width: 50px;
+  height: 20px;
+  color: #444;
+  font-size: 12px;
+  background-color: white;
+  position: absolute;
+  top: 10px;
+  left: 890px;
+  border: 1px solid #dfdfdf;
+  cursor: pointer;
+  text-align: center;
+}
+.goods-list .lists {
+  width: 960px;
+}
+.goods-list .lists li {
+  list-style: none;
+  text-align: center;
+  width: 210px;
+  height: 318px;
+  padding: 10px;
+  border: 1px solid transparent;
+  margin-top: 12px;
+  margin-right: 5px;
+  float: left;
+}
+.goods-list .lists li img {
+  width: 210px;
+  height: 227px;
+}
+.goods-list .lists li p {
+  text-align: left;
+}
+.goods-list .lists li p:nth-child(2) {
+  color: #666;
+  font-size: 16px;
+  background-color: transparent;
+}
+.goods-list .lists li p:nth-child(2) span {
+  color: #e50012;
+  font-size: 18px;
+  background-color: transparent;
+}
+.goods-list .lists li p:nth-child(3) {
+  color: #333;
+  font-size: 14px;
+  background-color: transparent;
+  margin: 5px 0 10px 0;
+}
+.goods-list .lists li p:nth-child(4) {
+  color: #999;
+  font-size: 12px;
+  background-color: transparent;
+}
+.goods-list .lists li p:nth-child(4) span {
+  color: #e50012;
+  font-size: 12px;
+  background-color: transparent;
 }
 
 /*# sourceMappingURL=list.css.map */
