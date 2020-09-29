@@ -1,0 +1,163 @@
+.imfor-local{
+    @include bigger(1170px,27px);
+    margin-top: 15px;
+    padding: 5px 15px;
+    border-bottom: 1px solid #eee;
+    p{
+        @include font-standard(#666,14px,transparent);
+    }
+}
+.imfor-detail{
+    @include bigger(1200px,472px);
+    @include flex-row(space-between);
+    align-items: flex-start;
+    margin-top: 20px;
+    .goods-img{
+        position: relative;
+        div:first-child{
+            border: 1px solid #eee;
+                img{
+                @include bigger(350px,350px);
+            }
+        }
+        .divnth2{
+            @include bigger(350px,60px);
+            @include flex-row(space-between);
+            margin: 10px 0 20px 0;
+            a{
+                @include bigger(13px,50px);
+            }
+            .simgbox{
+                @include bigger(280px,60px);
+                border: none;
+                overflow: hidden;
+                .imgbox2{
+                    border: none;
+                    @include flex-row(flex-start); 
+                    @include li-style();
+                }
+                img{
+               
+                @include bigger(58px,58px);
+                margin-right: 10px;
+                border: 1px solid #eee;
+                }
+            }
+        }
+    }
+    .qqwei{
+        @include flex-row(flex-start);
+        @include bigger(340px,30px);
+        @include font-standard(#333,12px,transparent);
+        span{
+            display: inline-block;
+            @include bigger(26px,30px);
+            margin-right: 20px;
+        }
+    }
+}
+.imfor-other{
+    @include bigger(830px,328px);
+    .imfor-name{    
+        p{
+            font-size: 18px;
+        }
+    }
+    .imfor-price{
+        @include bigger(830px,75px);
+            padding: 5px 0;
+            margin:9px 0 ; 
+        @include flex-row(space-between);
+        @include li-style();
+        background-color: #efefef;
+        p{
+            @include font-standard(#333,14px,transparent);
+            height: 25px;
+            margin-left: 30px;
+        }
+        
+    }
+    .price-right{
+        @include flex-row(center);
+        @include font-standard(#666,16px,transparent);
+        div{
+            @include bigger(64px,50px);
+            padding: 0 10px;
+        }
+        div:first-child{
+            border-right:3px solid #999;
+        }
+    }
+    .imfor-promise{
+        @include bigger(830px,52px);
+        padding-bottom: 15px;
+        padding-left: 35px;
+        border-bottom: 1px dashed #ccc;
+        @include flex-col(space-around);
+        align-items: flex-start;
+        p{
+            @include font-standard(#333,14px,transparent);
+        }
+    }
+    .imfor-num{
+        @include bigger(830px,84px);
+        div{
+            @include flex-row(flex-start);
+            p{
+                @include font-standard(#333,12px,transparent);
+                border: 1px solid #ccc;
+                margin: 10px 10px 0 0;
+                @include flex-row(center);
+                cursor: pointer;
+            } 
+            p:first-child{
+            width: 60px;
+            margin-left: 35px;
+            border: none;
+            text-align: right;
+            @include flex-row(flex-end);
+            cursor: default;
+            }
+            
+        }
+        .xinghao{
+            p{
+                @include bigger(40px,30px);
+            }
+        }
+        .jiajian{
+            p{
+                @include bigger(30px,30px);
+            }
+            input{
+                @include bigger(60px,30px);
+                margin-left: -11px;
+                margin-right: -1px;
+                margin-bottom: -9px;
+                outline: none;
+                border: 1px solid #ccc;
+                text-align: center;
+            }
+        }
+    }
+    .choose{
+        @include bigger(794px,42px);
+        padding-left: 36px;
+        padding-top: 15px;
+        @include flex-row(flex-start);
+        div{
+            @include bigger(160px,40px);
+            margin-right: 10px;
+            @include flex-row(center);
+            cursor: pointer;
+        }
+        .purchase{
+            @include font-standard(white,14px,#e50012);
+            border: 1px solid #e50012;
+        }
+        .buycar{
+            @include font-standard(#e50012,14px,white);
+            border:1px solid #e50012;
+        }
+    }
+}

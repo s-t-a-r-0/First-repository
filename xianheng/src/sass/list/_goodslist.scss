@@ -101,6 +101,15 @@
             cursor: pointer;
             ul{
                 display: inline-block;
+                @include li-style();
+                input{
+                    @include bigger(48px,20px);
+                    outline: none;
+                    border: 1px solid #ccc;
+                    padding: 0 5px;
+                    color: #666;
+                    text-align: left;
+                }
             }
             &:hover{
                 background-color: white;

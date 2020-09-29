@@ -364,320 +364,234 @@ header .search form a {
   margin: 0;
 }
 
-.list-title {
-  width: 1200px;
-  height: 36px;
+.imfor-local {
+  width: 1170px;
+  height: 27px;
   margin-top: 15px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: left;
-  border-bottom: 1px solid #ccc;
+  padding: 5px 15px;
+  border-bottom: 1px solid #eee;
 }
-.list-title p {
+.imfor-local p {
   color: #666;
   font-size: 14px;
   background-color: transparent;
-  text-align: left;
-  margin: 5px 15px;
 }
 
-.list-con {
+.imfor-detail {
+  width: 1200px;
+  height: 472px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top: 15px;
-  width: 1200px;
+  margin-top: 20px;
 }
-.list-con .goods-menu ul {
-  width: 220px;
-  list-style: none;
-  text-align: center;
-  text-align: left;
-  border: 1px solid #ccc;
-  color: #666;
-  font-size: 14px;
-  background-color: transparent;
-}
-.list-con .goods-menu ul aside {
-  line-height: 40px;
-  text-align: left;
-  color: white;
-  font-size: 16px;
-  background-color: #999;
-  margin-bottom: -1px;
-  padding-left: 30px;
-  border-bottom: 1px solid #ccc;
-}
-.list-con .goods-menu li {
-  line-height: 40px;
-  border-top: 1px dashed #ccc;
-  padding-left: 30px;
-}
-.list-con .goods-menu li span {
-  color: #999;
-  font-size: 12px;
-  background-color: transparent;
-  margin: 0 6px 0 -18px;
-  display: inline-block;
-  transform: rotate(180deg) scale(0.6);
-}
-
-.goods-list {
+.imfor-detail .goods-img {
   position: relative;
 }
-.goods-list .brand {
-  width: 960px;
+.imfor-detail .goods-img div:first-child {
+  border: 1px solid #eee;
+}
+.imfor-detail .goods-img div:first-child img {
+  width: 350px;
+  height: 350px;
+}
+.imfor-detail .goods-img .divnth2 {
+  width: 350px;
+  height: 60px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid #ccc;
+  margin: 10px 0 20px 0;
 }
-.goods-list .brand-left {
-  width: 100px;
-  height: 245px;
-  color: #333;
-  font-size: 14px;
-  background-color: #eee;
-  padding-left: 20px;
-  padding-top: 10px;
-}
-.goods-list .brand-right {
-  width: 830px;
-  height: 235px;
-  padding: 10px 10px 0px;
-}
-.goods-list .brand-right P {
-  margin-bottom: 10px;
-}
-.goods-list .brand-right P span {
-  display: inline-block;
-  margin: 0 3px;
-  color: #333;
-  font-size: 14px;
-  background-color: transparent;
-  cursor: pointer;
-}
-.goods-list .brand-right .brand-list {
-  width: 714px;
-  list-style: none;
-  text-align: center;
-}
-.goods-list .brand-right .brand-list li {
-  width: 118px;
+.imfor-detail .goods-img .divnth2 a {
+  width: 13px;
   height: 50px;
-  border: 1px solid #ccc;
-  margin-top: -1px;
-  margin-right: -1px;
-  float: left;
 }
-.goods-list .sort {
-  width: 960px;
-  border: 1px solid #ccc;
-  margin-top: 12px;
-  color: #333;
-  font-size: 14px;
-  background-color: #eee;
-  list-style: none;
-  text-align: center;
-}
-.goods-list .sort > li {
-  line-height: 40px;
-  padding: 0px 20px;
-  display: inline-block;
-  border-left: 1px solid #ccc;
-  margin-left: -1px;
-  margin-right: -4px;
-  cursor: pointer;
-}
-.goods-list .sort > li ul {
-  display: inline-block;
-  list-style: none;
-  text-align: center;
-}
-.goods-list .sort > li ul input {
-  width: 48px;
-  height: 20px;
-  outline: none;
-  border: 1px solid #ccc;
-  padding: 0 5px;
-  color: #666;
-  text-align: left;
-}
-.goods-list .sort > li:hover {
-  background-color: white;
-  color: #e50012;
-}
-.goods-list .sort li:last-child:hover {
-  background-color: #eee;
-  color: #333;
-}
-.goods-list .banner-btn {
-  width: 50px;
-  height: 20px;
-  color: #444;
-  font-size: 12px;
-  background-color: white;
-  position: absolute;
-  top: 10px;
-  left: 890px;
-  border: 1px solid #dfdfdf;
-  cursor: pointer;
-  text-align: center;
-}
-.goods-list .lists {
-  width: 960px;
-}
-.goods-list .lists li {
-  list-style: none;
-  text-align: center;
-  width: 210px;
-  height: 318px;
-  padding: 10px;
-  border: 1px solid transparent;
-  margin-top: 12px;
-  margin-right: 5px;
-  float: left;
-}
-.goods-list .lists li img {
-  width: 210px;
-  height: 227px;
-}
-.goods-list .lists li p {
-  text-align: left;
-}
-.goods-list .lists li p:nth-child(2) {
-  color: #666;
-  font-size: 16px;
-  background-color: transparent;
-}
-.goods-list .lists li p:nth-child(2) span {
-  color: #e50012;
-  font-size: 18px;
-  background-color: transparent;
-}
-.goods-list .lists li p:nth-child(3) {
-  color: #333;
-  font-size: 14px;
-  background-color: transparent;
-  margin: 5px 0 10px 0;
-}
-.goods-list .lists li p:nth-child(4) {
-  color: #999;
-  font-size: 12px;
-  background-color: transparent;
-}
-.goods-list .lists li p:nth-child(4) span {
-  color: #e50012;
-  font-size: 12px;
-  background-color: transparent;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-.pagelist {
-  clear: both;
-  width: 1170px;
-  margin: 0 auto;
-  text-align: right;
-  padding-right: 20px;
-}
-
-.m-style {
-  float: right;
-  text-align: center;
-}
-
-.m-style:before,
-.m-style:after {
-  content: "";
-  display: table;
-}
-
-.m-style:after {
-  clear: both;
+.imfor-detail .goods-img .divnth2 .simgbox {
+  width: 280px;
+  height: 60px;
+  border: none;
   overflow: hidden;
 }
-
-.m-style span {
-  float: left;
-  margin: 0 5px;
-  width: 38px;
-  height: 38px;
-  line-height: 38px;
-  color: #bdbdbd;
-  font-size: 14px;
-}
-
-.m-style .active {
-  float: left;
-  margin: 0 5px;
-  width: 38px;
-  height: 38px;
-  line-height: 38px;
-  background: #e91e63;
-  color: #fff;
-  font-size: 14px;
-  border: 1px solid #e91e63;
-}
-
-.m-style a {
-  float: left;
-  margin: 0 5px;
-  width: 38px;
-  height: 38px;
-  line-height: 38px;
-  background: #fff;
-  border: 1px solid #ebebeb;
-  color: #bdbdbd;
-  font-size: 14px;
-}
-
-.m-style a:hover {
-  color: #fff;
-  background: #e91e63;
-}
-
-.m-style .next,
-.m-style .prev {
-  font-family: "Simsun";
-  font-size: 16px;
-  font-weight: bold;
-  width: 80px;
-}
-
-.now,
-.count {
-  padding: 0 5px;
-  color: #f00;
-}
-
-.eg img {
-  max-width: 800px;
-  min-height: 500px;
-}
-
-input {
-  margin: 0 5px;
-  width: 38px;
-  height: 38px;
-  line-height: 38px;
+.imfor-detail .goods-img .divnth2 .simgbox .imgbox2 {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  list-style: none;
   text-align: center;
-  background: #fff;
-  border: 1px solid #ebebeb;
-  outline: none;
-  color: #bdbdbd;
-  font-size: 14px;
+}
+.imfor-detail .goods-img .divnth2 .simgbox img {
+  width: 58px;
+  height: 58px;
+  margin-right: 10px;
+  border: 1px solid #eee;
+}
+.imfor-detail .qqwei {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 340px;
+  height: 30px;
+  color: #333;
+  font-size: 12px;
+  background-color: transparent;
+}
+.imfor-detail .qqwei span {
+  display: inline-block;
+  width: 26px;
+  height: 30px;
+  margin-right: 20px;
 }
 
-/*# sourceMappingURL=list.css.map */
+.imfor-other {
+  width: 830px;
+  height: 328px;
+}
+.imfor-other .imfor-name p {
+  font-size: 18px;
+}
+.imfor-other .imfor-price {
+  width: 830px;
+  height: 75px;
+  padding: 5px 0;
+  margin: 9px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  text-align: center;
+  background-color: #efefef;
+}
+.imfor-other .imfor-price p {
+  color: #333;
+  font-size: 14px;
+  background-color: transparent;
+  height: 25px;
+  margin-left: 30px;
+}
+.imfor-other .price-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-size: 16px;
+  background-color: transparent;
+}
+.imfor-other .price-right div {
+  width: 64px;
+  height: 50px;
+  padding: 0 10px;
+}
+.imfor-other .price-right div:first-child {
+  border-right: 3px solid #999;
+}
+.imfor-other .imfor-promise {
+  width: 830px;
+  height: 52px;
+  padding-bottom: 15px;
+  padding-left: 35px;
+  border-bottom: 1px dashed #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.imfor-other .imfor-promise p {
+  color: #333;
+  font-size: 14px;
+  background-color: transparent;
+}
+.imfor-other .imfor-num {
+  width: 830px;
+  height: 84px;
+}
+.imfor-other .imfor-num div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.imfor-other .imfor-num div p {
+  color: #333;
+  font-size: 12px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  margin: 10px 10px 0 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.imfor-other .imfor-num div p:first-child {
+  width: 60px;
+  margin-left: 35px;
+  border: none;
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: default;
+}
+.imfor-other .imfor-num .xinghao p {
+  width: 40px;
+  height: 30px;
+}
+.imfor-other .imfor-num .jiajian p {
+  width: 30px;
+  height: 30px;
+}
+.imfor-other .imfor-num .jiajian input {
+  width: 60px;
+  height: 30px;
+  margin-left: -11px;
+  margin-right: -1px;
+  margin-bottom: -9px;
+  outline: none;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.imfor-other .choose {
+  width: 794px;
+  height: 42px;
+  padding-left: 36px;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.imfor-other .choose div {
+  width: 160px;
+  height: 40px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.imfor-other .choose .purchase {
+  color: white;
+  font-size: 14px;
+  background-color: #e50012;
+  border: 1px solid #e50012;
+}
+.imfor-other .choose .buycar {
+  color: #e50012;
+  font-size: 14px;
+  background-color: white;
+  border: 1px solid #e50012;
+}
+
+/*# sourceMappingURL=detail.css.map */

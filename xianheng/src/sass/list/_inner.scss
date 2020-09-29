@@ -41,6 +41,7 @@
         @include positon-style(absolute,45px,0px);
         .title{
             display: none;
+            z-index: 999;
                     li{
                     @include bigger(205px,40px);
                     @include font-standard(black,14px,#eeeeee);
