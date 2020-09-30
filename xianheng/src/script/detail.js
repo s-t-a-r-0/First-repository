@@ -139,6 +139,19 @@ define([], function () {
                 }
                 console.log('按钮已经点击了');
             })
+
+            const $jia = $('.jiajian .jia');
+            const $jian = $('.jiajian .jian');
+            const $goodsnum = $('.jiajian input')
+            let  $num =  $goodsnum.val()
+            $jia.on('click',function(){
+                $num++
+                $goodsnum.val($num)
+            })
+            $jian.on('click',function(){
+                $num--
+                $goodsnum.val($num)
+            })
         }
     }
 })
