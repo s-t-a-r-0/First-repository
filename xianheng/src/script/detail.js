@@ -106,11 +106,38 @@ define([], function () {
                 let $str = '';
                 $.each($newdata, function (index, value) {
                     $str += `
-            <li><img src='${value}'></li>
-            `
+                <li><img src='${value}'></li>
+                `
                     console.log(value);
                 })
                 $('.imgbox2').html($str);
+            })
+            //设置两个数组储存物品sid与物品个数
+            let arrsid = [];
+            let arrnum = [];
+            //封装一个函数，得到cookie中的值
+            function getcookie() {
+                if ($.cookie('cookiesid') && $.cookie('cookienum')) {
+                    arrsid = $.cookie('cookiesid').split(',');
+                    arrnum = $.cookie('cookienum').split(',');
+                }
+            }
+            const $join = $('.buycar');
+            //当加入购物车被点击的时候
+            $join.on('click', function () {
+                getcookie();
+                if ($.inArray($datasid, arrsid) === -1) {
+                    arrsid.push($datasid);
+                    arrnum.push($('#count').val());
+                    $.cookie('cookiesid', arrsid, { expires: 7 });
+                    $.cookie('cookienum', arrnum, { expires: 7 });
+                } else {
+                    let what = $.inArray($datasid, arrsid);
+                    let number = parseInt($('#count').val()) + parseInt(arrnum[what])
+                    arrnum[what] = number;
+                    $.cookie('cookienum', arrnum, { expires: 7 });
+                }
+                console.log('按钮已经点击了');
             })
         }
     }

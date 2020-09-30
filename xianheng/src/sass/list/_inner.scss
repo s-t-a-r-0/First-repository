@@ -39,9 +39,10 @@
     .inner-left{
         @include li-style();
         @include positon-style(absolute,45px,0px);
+         z-index: 999;
         .title{
             display: none;
-            z-index: 999;
+           
                     li{
                     @include bigger(205px,40px);
                     @include font-standard(black,14px,#eeeeee);

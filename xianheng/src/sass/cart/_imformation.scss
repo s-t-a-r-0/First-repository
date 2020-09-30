@@ -1,0 +1,123 @@
+.lei{
+    @include bigger(1200px,40px);
+    margin-top: 20px;
+    border-bottom: 1px solid #ccc;
+    p{
+        @include bigger(60px,40px);
+        text-align: center;
+        padding: 0 20px;
+        line-height: 40px;
+        @include font-standard(#e50012,14px,white);
+        border-bottom: 2px solid #e50012;
+        margin-bottom: -2px;
+    }
+}
+.cart-name{
+            @include flex-row(flex-start);
+            border: 1px solid #ccc;
+            border-top: 0;
+
+    span{
+        @include font-standard(#444,14px,transparent);
+        display: inline-block;
+        line-height: 40px;
+        padding-left: 15px;
+    }
+}
+.span01{
+    width: 10px;
+}
+.span02{
+    width: 90px;
+}
+.span03{
+    width: 185px;
+}
+.span04{
+    width: 200px;
+}
+.span05{
+    width: 150px;
+}
+.span06{
+    width: 85px;
+}
+.span07{
+    width: 85px;
+}
+.span08{
+    width: 95px;
+}
+.span09{
+    width: 85px;
+}
+.span10{
+    width: 28px;
+}
+.cart-ul{
+    @include bigger(1200px,121px);
+    background: #fcf2f3;
+    border: 1px solid #ccc;
+    margin-top: -1px;
+    li{
+        @include li-style();
+        height: 90px;
+        padding:15px 0 15px 15px;
+        float: left;
+        @include font-standard(#444,14px,transparent);
+        text-align: left;
+    }
+    img{
+        @include bigger(90px,90px);
+        border: 1px solid #ccc;
+    }
+    a{
+        text-decoration: none;
+    }
+    .shuliang{
+            p{
+                float: left;
+                @include bigger(20px,20px);
+                border: 1px solid #ccc;
+                text-align: center;
+                cursor: pointer;
+            }
+            input{
+                float: left;
+                @include bigger(32px,20px);
+                margin-left: -1px;
+                margin-right: -1px;
+                margin-bottom: -9px;
+                outline: none;
+                border: 1px solid #ccc;
+                text-align: center;
+            }
+    }
+}
+.cart-bottom{
+    @include bigger(1200px,40px);
+    @include font-standard(#444,14px,#efefef);
+    @include flex-row(space-between);
+    margin-top: 20px;
+    .bottom-left{
+        @include bigger(530px,40px);
+        padding-left: 15px;
+        li{
+            @include li-style();
+            line-height: 40px;
+        float: left;
+        }
+        b{
+            color: #e50012;
+        }
+    }
+    .bottom-right{
+        @include bigger(130px,40px);
+        @include font-standard(white,16px,#e50012);
+        cursor: pointer;
+        @include flex-row(center);
+    }
+}
+.li03{
+    margin-right: 40px;
+}

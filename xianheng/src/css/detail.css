@@ -210,10 +210,10 @@ header .search form a {
   position: absolute;
   top: 45px;
   left: 0px;
+  z-index: 999;
 }
 #inner .inner-left .title {
   display: none;
-  z-index: 999;
 }
 #inner .inner-left .title li {
   width: 205px;

@@ -1,0 +1,14 @@
+@charset "UTF-8";
+//引入mixin
+@import 'mixins/bodystyle';
+@import 'mixins/flex';
+@import 'mixins/font-style';
+
+//引入结构样式
+@import 'list/all';
+@import 'list/banner';
+@import 'list/header';
+@import 'list/inner';
+@import 'list/footer';
+@import 'list/stairway';
+@import 'cart/imformation';
