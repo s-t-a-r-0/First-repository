@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#banner {
+  width: 1200px;
+  height: 30px;
+  background-color: transparent;
+}
+
+header {
+  width: 1200px;
+  height: 86px;
+  background-color: transparent;
+}
+
+#inner {
+  width: 1200px;
+  height: 43px;
+  background-color: transparent;
+}
+
+.one-of-block {
+  margin-top: 15px;
+  width: 1200px;
+  height: 505px;
+  background-color: transparent;
+}
+
+footer {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #efefef;
+}
+
+#footer-top {
+  width: 1200px;
+  height: 205px;
+  background-color: transparent;
+}
+
+#footer-bottom {
+  width: 1200px;
+  height: 154px;
+  background-color: transparent;
+}
+
+#banner {
+  width: 980px;
+  height: 30px;
+}
+
+#banner li {
+  list-style: none;
+  text-align: center;
+  line-height: 30px;
+  padding-right: 14px;
+}
+
+.banner-left {
+  float: right;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.banner-left li {
+  color: #888888;
+  font-size: 12px;
+  background-color: transparent;
+}
+
+.banner-right {
+  float: right;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.banner-right a {
+  color: #666;
+  font-size: 12px;
+  background-color: transparent;
+  border-right: 1px solid #eee;
+  padding-right: 11px;
+  text-decoration: none;
+  margin-left: 2px;
+}
+
+.banner-right li:last-child {
+  padding-right: 0;
+}
+.banner-right li:last-child a {
+  padding-right: 0;
+  border-right: none;
+  margin-left: 4px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 980px;
+  height: 80px;
+}
+header p {
+  color: #e40115;
+  padding-top: 40px;
+}
+header p a {
+  text-decoration: none;
+  font-weight: bold;
+  padding-right: 0;
+  border-right: none;
+  color: #e40115;
+  font-size: 16px;
+  background-color: transparent;
+  margin-left: 4px;
+}
+
+.header-right {
+  width: 400px;
+  height: 40px;
+}
+
+#login {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 980px;
+  height: 565px;
+  background-color: white;
+}
+#login .login-img {
+  margin: 10px 0 0 -200px;
+}
+#login .login-img img {
+  width: 800px;
+  height: 565px;
+}
+#login .login-right {
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 374px;
+  height: 443px;
+  padding-top: 27px;
+}
+#login .login-right p:first-child {
+  width: 320px;
+  height: 25px;
+  color: #333;
+  font-size: 22px;
+  background-color: white;
+  text-align: left;
+}
+#login .login-right .pass, #login .login-right .user {
+  border: 1px solid #ccc;
+  width: 320px;
+  height: 40px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#login .login-right .pass input, #login .login-right .user input {
+  width: 257px;
+  height: 40px;
+  outline: none;
+  border: none;
+  padding: 0 11px;
+}
+#login .login-right > span {
+  width: 320px;
+  height: 14px;
+  color: red;
+  font-size: 14px;
+}
+#login .login-right .forget {
+  width: 320px;
+  height: 25px;
+  text-align: right;
+  color: #333;
+  font-size: 14px;
+  background-color: white;
+  margin-top: 8px;
+  cursor: pointer;
+}
+#login .login-right .forget:hover {
+  color: red;
+}
+#login .login-right .denglu {
+  width: 320px;
+  height: 47px;
+  margin-top: 60px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  background-color: #e50012;
+  line-height: 47px;
+  border: 1px #e2e2e2 solid;
+}
+#login .login-right .zhuce {
+  width: 320px;
+  height: 37px;
+  margin-top: 10px;
+  text-align: center;
+  color: #666;
+  font-size: 18px;
+  background-color: #f0f0f0;
+  line-height: 37px;
+  border: 1px #e2e2e2 solid;
+}
+#login .login-right b {
+  width: 40px;
+  height: 40px;
+  background-color: #eee;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  border-right: 1px solid #ccc;
+}
+
+#footer-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+#footer-top ul {
+  height: 150px;
+  list-style: none;
+  text-align: center;
+}
+#footer-top ul li {
+  text-align: left;
+  margin-bottom: 10px;
+}
+#footer-top ul li a {
+  text-decoration: none;
+  color: #444444;
+  font-size: 14px;
+  background-color: transparent;
+}
+#footer-top ul li span:last-child {
+  color: #444444;
+  font-size: 12px;
+  background-color: transparent;
+}
+#footer-top div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  margin-bottom: 40px;
+}
+#footer-top div ul {
+  width: 240px;
+  height: 53px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+}
+#footer-top div ul li {
+  text-align: left;
+}
+
+#footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: #666;
+  font-size: 12px;
+  background-color: transparent;
+}
+#footer-bottom .credential {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#stairway {
+  display: none;
+  position: fixed;
+  top: 160px;
+  left: 305px;
+}
+#stairway ul {
+  width: 38px;
+  height: 604px;
+  list-style: none;
+  text-align: center;
+}
+#stairway ul li {
+  color: #666;
+  font-size: 14px;
+  background-color: #eee;
+  width: 38px;
+  height: 44px;
+  margin-bottom: 2px;
+  cursor: pointer;
+}
+#stairway ul li:last-child {
+  color: #666;
+  font-size: 14px;
+  background-color: transparent;
+}
+
+#right-way {
+  position: fixed;
+  top: 100px;
+  left: 1849px;
+}
+#right-way ul {
+  list-style: none;
+  text-align: center;
+  border: 1px solid #666;
+}
+#right-way ul li {
+  position: relative;
+  width: 54px;
+  height: 54px;
+  color: #666;
+  font-size: 12px;
+  background-color: #999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #666;
+  cursor: pointer;
+}
+#right-way ul li img {
+  margin: -10px 0;
+}
+#right-way ul li:last-child {
+  border-bottom: none;
+}
+#right-way ul li:last-child img {
+  margin: 0;
+}
+#right-way ul .thisimg {
+  width: 160px;
+  height: 160px;
+  z-index: -1;
+  position: absolute;
+  top: 117px;
+  left: 54px;
+}
+
+/*# sourceMappingURL=login.css.map */

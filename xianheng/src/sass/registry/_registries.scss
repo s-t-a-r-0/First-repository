@@ -1,0 +1,96 @@
+#registry{
+    @include bigger(950px,536px);
+    @include flex-col(center);
+    margin:5px 0;
+    padding: 5px 20px 20px 20px;
+    .rigistry-top{
+        @include bigger(650px,37px);
+        border-bottom: 1px solid #ccc;
+        padding-left: 60px;
+        a{            
+            @include font-standard(#333,16px,white);
+            display: inline-block;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-bottom: none;
+            text-decoration: none;
+            margin-top: -6px;
+        }
+        a:first-child{
+            @include bigger(120px,39px);
+            line-height: 39px;
+            border-top: 2px solid red;
+            
+        }
+        a:last-child{
+            @include bigger(100px,33px);
+            line-height: 33px;
+            margin-left: -5px;
+        }
+    }
+    form{
+        div{
+            @include bigger(590px,42px);
+            @include flex-row(flex-start);
+            margin-top: 10px;
+            b{
+                @include bigger(90px,40px);
+                @include font-standard(#666,14px,white);
+                @include flex-row(space-around);
+                font-weight: normal;
+                border: 1px solid #ccc;
+                border-right: none;
+                i{
+                    font-style: normal;
+                    color: red;
+                    margin-right: -20px;
+                    margin-top: 6px;
+                }
+            }
+            select,input{
+                @include bigger(277px,40px);
+                @include font-standard(#666,14px,white);
+                border: 1px solid #ccc;
+                border-left: none;
+                padding:0 10px;
+                outline: none;
+            }
+            select{
+                @include bigger(298px,42px);
+                @include font-standard(#333,14px,white);
+            }
+            span{
+                font-size: 14px;
+                margin-left: 10px;
+                color: red;
+            }
+        }
+        p{
+            @include bigger(380px,26px);
+            @include font-standard(#666,14px,white);
+            text-align: right;
+            line-height: 26px;
+            span{
+                padding: 0 10px;
+                @include font-standard(white,12px,#eee);
+            }
+        }
+        .xieyi{
+            text-align: left;
+            input{
+                vertical-align: middle;
+                margin-top: -2px;
+            }
+            a{
+                text-decoration: none;
+                color: red;
+            }
+        }
+        .liji{
+            @include bigger(386px,42px);
+            @include font-standard(white,20px,red);
+            @include flex-row(center);
+            margin-top: 5px;
+        }
+    }
+}

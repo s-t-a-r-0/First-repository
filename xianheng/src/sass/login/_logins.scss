@@ -1,0 +1,74 @@
+@charset "UTF-8";
+#login{
+    @include flex-row(center);
+    @include bigger(980px,565px);
+    background-color: white;
+    .login-img{
+        img{
+            @include bigger(800px,565px);
+            
+        }
+        margin: 10px 0 0 -200px;
+    }
+    .login-right{
+        border: 1px solid #ccc;
+        @include flex-col(flex-start);
+        @include bigger(374px,443px);
+        padding-top: 27px;
+        p:first-child{
+            @include bigger(320px,25px);
+            @include font-standard(#333,22px,white);
+            text-align: left;
+        }
+        .pass,.user{
+            border: 1px solid #ccc;
+            @include bigger(320px,40px);
+            margin-top: 10px;
+            @include flex-row(center);
+            input{
+                @include bigger(257px,40px);
+                outline: none;
+                border: none;
+                padding: 0 11px;
+            }
+        }
+        &>span{
+            @include bigger(320px,14px);
+            color:red;
+            font-size: 14px;
+        }
+        .forget{
+            @include bigger(320px,25px);
+            text-align: right;
+            @include font-standard(#333,14px,white);
+            margin-top: 8px;
+            cursor: pointer;
+            &:hover{
+                color:red;
+            }
+        }
+        .denglu{
+            @include bigger(320px,47px);
+            margin-top: 60px;
+            text-align: center;
+            @include font-standard(white,20px,#e50012);
+            line-height: 47px;
+            border: 1px #e2e2e2 solid;
+        }
+        .zhuce{
+            @include bigger(320px,37px);
+            margin-top: 10px;
+            text-align: center;
+            @include font-standard(#666,18px,#f0f0f0);
+            line-height: 37px;
+            border: 1px #e2e2e2 solid;
+        }
+        b{
+            @include bigger(40px,40px);
+            background-color: #eee;
+            @include flex-row(center);
+            color: #aaa;
+            border-right: 1px solid #ccc;
+        }
+    }
+}

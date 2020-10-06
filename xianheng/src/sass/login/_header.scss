@@ -1,0 +1,20 @@
+header{
+    @include flex-row(space-between);
+    @include bigger(980px,80px);
+    p{
+        color: #e40115;
+        padding-top: 40px;
+        a{
+            text-decoration: none;
+            font-weight: bold;
+            padding-right:0;
+            border-right:none;
+            @include font-standard(#e40115,16px,transparent);
+            margin-left: 4px;
+        }
+    }
+}
+
+.header-right{
+    @include bigger(400px,40px);
+}

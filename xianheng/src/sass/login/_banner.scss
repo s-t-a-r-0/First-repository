@@ -1,0 +1,41 @@
+@charset "UTF-8";
+//banner 样式
+#banner{
+    @include bigger(980px,30px);
+}
+#banner li{
+    @include li-style();
+   line-height: 30px;
+   padding-right: 14px;
+}
+//banner 左边样式
+.banner-left{
+    float: right;
+    @include flex-row(center);
+    li{
+        @include font-standard(#888888,12px,transparent);
+    }
+}
+//banner 右边样式
+// .banner-right li{}
+.banner-right{
+    float:right;
+    @include flex-row(center);
+     a{
+        @include font-standard(#666,12px,transparent);
+        border-right: 1px solid #eee;
+        padding-right: 11px;
+        text-decoration: none;
+        margin-left: 2px;
+    }
+}
+//给最后一个li清除样式
+.banner-right li:last-child{
+    padding-right:0;
+        a{
+
+            padding-right:0;
+            border-right:none;
+            margin-left: 4px;
+}
+}
