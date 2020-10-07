@@ -91,6 +91,7 @@
             @include font-standard(white,20px,red);
             @include flex-row(center);
             margin-top: 5px;
+            cursor: pointer;
         }
     }
 }

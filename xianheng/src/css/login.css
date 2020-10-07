@@ -214,6 +214,7 @@ header p a {
   background-color: #e50012;
   line-height: 47px;
   border: 1px #e2e2e2 solid;
+  cursor: pointer;
 }
 #login .login-right .zhuce {
   width: 320px;
@@ -225,6 +226,7 @@ header p a {
   background-color: #f0f0f0;
   line-height: 37px;
   border: 1px #e2e2e2 solid;
+  cursor: pointer;
 }
 #login .login-right b {
   width: 40px;

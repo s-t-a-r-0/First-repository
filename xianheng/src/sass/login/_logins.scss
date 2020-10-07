@@ -47,6 +47,7 @@
                 color:red;
             }
         }
+        //登录按钮
         .denglu{
             @include bigger(320px,47px);
             margin-top: 60px;
@@ -54,7 +55,9 @@
             @include font-standard(white,20px,#e50012);
             line-height: 47px;
             border: 1px #e2e2e2 solid;
+            cursor: pointer;
         }
+        //注册按钮
         .zhuce{
             @include bigger(320px,37px);
             margin-top: 10px;
@@ -62,6 +65,7 @@
             @include font-standard(#666,18px,#f0f0f0);
             line-height: 37px;
             border: 1px #e2e2e2 solid;
+            cursor: pointer;
         }
         b{
             @include bigger(40px,40px);

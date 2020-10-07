@@ -7,7 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/registry.css">
 </head>
-
+<link rel="stylesheet" href="./font/font_v6y191r55ob/iconfont.css">
+<script src='./script/require.js' defer async="true" data-main="./script/main.js" id="currentpage"
+    data-page="registry"></script>
 <body>
     <!--banner结构-->
     <div id="banner">
@@ -37,20 +39,20 @@
             <a href="">企业会员注册</a>
         </div>
         <form action="">
-            <div><b><i>*</i>用 户 名:</b><input type="text" placeholder="4-20个汉字、字母、数字及'_'组合"><span>sdw</span></div>
-            <div><b><i>*</i>设置密码:</b><input type="text" placeholder="6-20个大小写英文字母、符号或数字"><span></span></div>
-            <p>安全级别：
-                <span>弱</span>
-                <span>中</span>
-                <span>强</span>
+            <div class="username"><b><i>*</i>用 户 名:</b><input type="text" placeholder="4-20个汉字、字母、数字及'_'组合"><span></span></div>
+            <div class="password"><b><i>*</i>设置密码:</b><input type="text" placeholder="6-20个大小写英文字母、符号或数字"><span></span></div>
+            <p class="security">安全级别：
+                <span class="ruo">弱</span>
+                <span class="zhong">中</span>
+                <span class="qiang">强</span>
             </p>
-            <div><b><i>*</i>确认密码:</b><input type="text" placeholder="请再次输入密码"><span></span></div>
-            <div><b><i>*</i>所属省份:</b><select name="" id=""><option value="">--请选择省份--</option></select><span></span></div>
-            <div><b><i>*</i>所属城市:</b><select name="" id=""><option value="">--请选择省份--</option></select><span></span></div>
-            <div><b><i>*</i>邮箱地址:</b><input type="text" placeholder="请输入邮箱地址"><span></span></div>
-            <div><b><i>*</i>手机号码:</b><input type="text" placeholder="请输入手机号码"><span></span></div>
+            <div class="validation"><b><i>*</i>确认密码:</b><input type="text" placeholder="请再次输入密码"><span></span></div>
+            <div class="prov"><b><i>*</i>所属省份:</b><select name="" id="prov"><option value="">--请选择省份--</option></select><span></span></div>
+            <div class="city"><b><i>*</i>所属城市:</b><select name="" id="city"><option value="">--请选择城市--</option></select><span></span></div>
+            <div class="email"><b><i>*</i>邮箱地址:</b><input type="text" placeholder="请输入邮箱地址"><span></span></div>
+            <div class="phone"><b><i>*</i>手机号码:</b><input type="text" placeholder="请输入手机号码"><span></span></div>
             <p class="xieyi"><input type="checkbox" checked> 我已阅读并同意 <a href="">《咸亨国际商城用户注册协议》</a></p>
-            <div class="liji">立即注册</div>
+            <div ><input type="submit" value="立即注册" class="liji"></div>
             <p class="xieyi">我已有咸亨国际商城帐号，<a href=""> 立即登录</a></p>
         </form>
     </section>
