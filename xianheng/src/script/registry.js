@@ -183,13 +183,13 @@ define([], function () {
                 }
                 if (!$('#prov').find('option:selected').attr('index')) {
                     $('.prov span').html('请选择所属省份')
-                    return false;
+                    // return false;
                 }
                 if (!$('#city').find('option:selected').attr('index')) {
                     $('.city span').html('请选择所属城市')
-                    return false;
+                    // return false;
                 }
-                console.log(userflag,telflag,validaflag,emailflag,passflag);
+                console.log(userflag, telflag, validaflag, emailflag, passflag);
                 if (!userflag || !telflag || !validaflag || !emailflag || !passflag) {
                     return false;
                 }
