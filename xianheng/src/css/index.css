@@ -72,12 +72,12 @@ footer {
 .banner-left li:first-child {
   color: #888888;
   font-size: 12px;
-  background-color: transparent;
+  background-color: white;
 }
 .banner-left li:last-child a:first-child {
   color: red;
   font-size: 12px;
-  background-color: transparent;
+  background-color: white;
 }
 .banner-left li:last-child a:last-child {
   color: #666;
@@ -108,8 +108,8 @@ footer {
 .banner-right a {
   color: #888888;
   font-size: 12px;
-  background-color: transparent;
-  border-right: 2px solid #666;
+  background-color: white;
+  border-right: 2px solid #999;
   padding-right: 11px;
   text-decoration: none;
   margin-left: 2px;
@@ -124,7 +124,7 @@ footer {
   border-right: none;
   color: red;
   font-size: 16px;
-  background-color: transparent;
+  background-color: white;
   margin-left: 4px;
 }
 
@@ -579,13 +579,13 @@ header .search form a {
 
 #right-way {
   position: fixed;
-  top: 100px;
+  top: 360px;
   left: 1849px;
 }
 #right-way ul {
   list-style: none;
   text-align: center;
-  border: 1px solid #666;
+  border: 1px solid #999;
 }
 #right-way ul li {
   position: relative;
@@ -593,12 +593,12 @@ header .search form a {
   height: 54px;
   color: #666;
   font-size: 12px;
-  background-color: #999;
+  background-color: #aaa;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid #999;
   cursor: pointer;
 }
 #right-way ul li img {
@@ -617,6 +617,81 @@ header .search form a {
   position: absolute;
   top: 117px;
   left: 54px;
+}
+
+.morething {
+  position: absolute;
+  top: 30px;
+  left: 910px;
+  color: #666;
+  font-size: 12px;
+  background-color: white;
+  list-style: none;
+  text-align: center;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  display: none;
+}
+.morething li {
+  width: 160px;
+  height: 30px;
+  text-align: left;
+  text-indent: 16px;
+  background-color: white;
+  line-height: 30px;
+}
+
+.morething02 {
+  position: absolute;
+  top: 30px;
+  left: 1184px;
+  color: #666;
+  font-size: 12px;
+  background-color: white;
+  list-style: none;
+  text-align: center;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  display: none;
+}
+.morething02 li {
+  width: 110px;
+  height: 30px;
+  text-align: left;
+  text-indent: 16px;
+  background-color: white;
+  line-height: 30px;
+}
+
+.morething03 {
+  width: 345px;
+  height: 60px;
+  position: absolute;
+  top: 30px;
+  left: 840px;
+  color: #666;
+  font-size: 12px;
+  background-color: white;
+  list-style: none;
+  text-align: center;
+  line-height: 60px;
+  text-align: left;
+  text-indent: 10px;
+  border: 1px solid #ccc;
+  display: none;
+}
+
+.morething04 {
+  position: absolute;
+  top: 31px;
+  left: 1297px;
+  display: none;
+}
+.morething04 img {
+  width: 100px;
+  height: 100px;
 }
 
 /*# sourceMappingURL=index.css.map */

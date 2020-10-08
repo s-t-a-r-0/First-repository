@@ -100,7 +100,7 @@
     @include flex-row(space-between);
     margin-top: 20px;
     .bottom-left{
-        @include bigger(530px,40px);
+        @include bigger(700px,40px);
         padding-left: 15px;
         li{
             @include li-style();

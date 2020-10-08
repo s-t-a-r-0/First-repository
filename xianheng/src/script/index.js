@@ -5,7 +5,7 @@ define([], function () {
                 const $blockall = $('#blockall');
                 console.log(12345);
                 $.ajax({
-                    url: 'http://192.168.13.68/First-repository/xianheng/php/block.php',
+                    url: 'http://localhost/First-repository/xianheng/php/block.php',
                     dataType: 'json'
                 })
                     .done(function (data) {
@@ -279,7 +279,13 @@ define([], function () {
                         $rightli.eq(5).hide()
                     }
                 }
+
+                $('.more01').hover(function(){$('.morething').show()},function(){$('.morething').hide()})
+                $('.more02').hover(function(){$('.morething02').show()},function(){$('.morething02').hide()})
+                $('.more03').hover(function(){$('.morething03').show()},function(){$('.morething03').hide()})
+                $('.more04').hover(function(){$('.morething04').show()},function(){$('.morething04').hide()})
             }()
+
         }
     }
 })

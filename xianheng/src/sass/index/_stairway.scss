@@ -19,16 +19,16 @@
 }
 //右侧边栏样式
 #right-way{
-    @include positon-style(fixed,100px,1849px);
+    @include positon-style(fixed,360px,1849px);
     ul{
         @include li-style();
-        border: 1px solid #666;
+        border: 1px solid #999;
         li{
             position: relative;
             @include bigger(54px,54px);
-            @include font-standard(#666,12px,#999);
+            @include font-standard(#666,12px,#aaa);
             @include flex-col(center);
-            border-bottom: 1px solid #666;
+            border-bottom: 1px solid #999;
             cursor: pointer;
             img{
                 margin: -10px 0;
@@ -45,5 +45,55 @@
             z-index: -1;
             @include positon-style(absolute,117px,54px);
         }
+    }
+}
+.morething{
+    @include positon-style(absolute,30px,910px);
+    @include font-standard(#666,12px,white);
+    @include li-style();
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    display: none;
+    li{
+        @include bigger(160px,30px);
+        text-align: left;
+        text-indent: 16px;
+        background-color: white;
+        line-height: 30px;
+    }
+}
+.morething02{
+    @include positon-style(absolute,30px,1184px);
+    @include font-standard(#666,12px,white);
+    @include li-style();
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    display: none;
+    li{
+        @include bigger(110px,30px);
+        text-align: left;
+        text-indent: 16px;
+        background-color: white;
+        line-height: 30px;
+    }
+}
+.morething03{
+    @include bigger(345px,60px);
+    @include positon-style(absolute,30px,840px);
+    @include font-standard(#666,12px,white);
+    @include li-style();
+    line-height: 60px;
+    text-align: left;
+    text-indent: 10px;
+    border: 1px solid #ccc;
+    display: none;
+}
+.morething04{
+    @include positon-style(absolute,31px,1297px);
+    display: none;
+    img{
+        @include bigger(100px,100px);
     }
 }

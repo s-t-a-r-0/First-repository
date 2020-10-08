@@ -10,11 +10,11 @@
     float: left;
     @include flex-row(center);
     li:first-child{
-        @include font-standard(#888888,12px,transparent);
+        @include font-standard(#888888,12px,white);
     }
     li:last-child{
         a:first-child{
-            @include font-standard(red,12px,transparent);
+            @include font-standard(red,12px,white);
         }
         a:last-child{
             @include font-standard();
@@ -39,8 +39,8 @@
         margin-left: 6px;
     }
      a{
-        @include font-standard(#888888,12px,transparent);
-        border-right: 2px solid #666;
+        @include font-standard(#888888,12px,white);
+        border-right: 2px solid #999;
         padding-right: 11px;
         text-decoration: none;
         margin-left: 2px;
@@ -53,7 +53,7 @@
             font-weight: bold;
             padding-right:0;
             border-right:none;
-            @include font-standard(red,16px,transparent);
+            @include font-standard(red,16px,white);
             margin-left: 4px;
 }
 }
